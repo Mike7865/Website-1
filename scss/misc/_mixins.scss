@@ -1,0 +1,24 @@
+@mixin placecolor($color: #000000) {
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &::-moz-placeholder {
+        color: $color;
+    }
+    &:-ms-input-placeholder {
+        color: $color;
+    }
+}
+
+@mixin vertical-gradient($top-color: #ffffff, $bottom-color: #000000) {
+    background-color: $top-color;
+    background-image: -webkit-gradient(linear, left-top, left-bottom, from($top-color), to($bottom-color$bottom-color));
+    background-image: -webkit-linear-gradient(top, $top-color, $bottom-color);
+    background-image: -moz-linear-gradient(top, $top-color, $bottom-color);
+    background-image: -o-linear-gradient(top, $top-color, $bottom-color);
+    background-image: linear-gradient(to bottom, $top-color, $bottom-color);
+    filter: progid:DXimageTransform.Microsoft.gradient(startColorStr=$top-color, EndColorStr=$bottom-color);
+}

@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    color: black;
+}
+
+.footer__right {
+    display: flex;
+    width: 50%;
+}
+
+.footer__left {
+    display: flex;
+    width: 50%;
+}

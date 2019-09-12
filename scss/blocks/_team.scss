@@ -1,0 +1,26 @@
+.team {
+    background: url(../img/bg/team-bg.png) center center / cover no-repeat;
+}
+
+.team__background {
+    background: url(../img/bg/t-bg.png) center right / cover no-repeat;
+}
+.team__title {
+    font-size: 72.5px;
+    font-family: 'Gagalin';
+    color: $yellow;
+    margin-right: 154px;
+    margin-bottom: 475px;
+}
+.team__accordeon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.member__desk {
+    height: 0;
+    overflow: hidden;
+}

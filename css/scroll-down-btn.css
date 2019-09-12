@@ -1,0 +1,12 @@
+.scroll-down-btn {
+  width: 29px;
+  height: 14px;
+  background: url(../img/icons/arrow-scroll.png) center center/contain no-repeat;
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+/*# sourceMappingURL=scroll-down-btn.css.map */
