@@ -1,26 +1,59 @@
 .team {
     background: url(../img/bg/team-bg.png) center center / cover no-repeat;
+    align-items: flex-end;
+}
+
+.team__container {
+    width: 80%;
 }
 
 .team__background {
     background: url(../img/bg/t-bg.png) center right / cover no-repeat;
-}
-.team__title {
-    font-size: 72.5px;
-    font-family: 'Gagalin';
-    color: $yellow;
-    margin-right: 154px;
-    margin-bottom: 475px;
-}
-.team__accordeon {
+    width: 50%;
+    height: 100%;
     display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.member__desk {
+.team__title {
+    font-size: 72px;
+    font-family: 'Gagalin';
+    color: $yellow;
+    margin-bottom: 46px;
+}
+
+.team__accordeon {
+    color: #fff;
+}
+
+.member {
     height: 0;
+}
+
+.member__name:before {
+    content: "";
+    margin-right: 10px;
+    width: 9px;
+    height: 7px;
+    background: url(../img/icons/icon_1.png);
+}
+
+.member__name {
+    font-size: 14px;
+    font-family: 'Gagalin';
+    color: #ffffff;
+    
+    &:hover {
+        .member__name {
+            opacity: 1;
+            color: #f9b43b;
+        }
+    }
+    
+}
+.member__desk {
+    display: flex;
     overflow: hidden;
 }

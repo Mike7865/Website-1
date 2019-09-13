@@ -1,9 +1,11 @@
 .footer {
-    display: flex;
+    background: url(../img/bg/footer.png);
     position: absolute;
     width: 100%;
-    height: 20px;
+    height: 60px;
     color: black;
+    margin-bottom: 0;
+    display: flex;
 }
 
 .footer__right {
