@@ -1,4 +1,4 @@
-.footer {
+ .footer {
     background: url(../img/bg/footer.png);
     position: absolute;
     width: 100%;
@@ -6,14 +6,49 @@
     color: black;
     margin-bottom: 0;
     display: flex;
+    bottom: 0;
+    left: 0;
+    color: #fff;
 }
 
-.footer__right {
+.footer__inf {
     display: flex;
-    width: 50%;
+    width: 100%;
 }
 
 .footer__left {
     display: flex;
     width: 50%;
+}
+
+.footer__right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+
+    @include phones {
+        white-space: initial;
+        text-align: center;
+    }
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+}
+
+.telephone {
+    display: flex;
+}
+
+.socials__list {
+    display: flex;
+}
+
+.socials__item {
+    margin-right: rem(20px);
+    
+    &:last-child {
+        margin-right: 0;
+    }
 }

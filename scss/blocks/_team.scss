@@ -4,46 +4,78 @@
 }
 
 .team__container {
-    width: 80%;
+    width: 50%;
+    height: 100%;
 }
 
 .team__background {
     background: url(../img/bg/t-bg.png) center right / cover no-repeat;
-    width: 50%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding-left: rem(97px);
+
+    @include tablets {
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+    }
 }
 
 .team__title {
-    font-size: 72px;
+    font-size: rem(72px);
     font-family: 'Gagalin';
     color: $yellow;
-    margin-bottom: 46px;
+    margin-bottom: rem(46px);
 }
 
 .team__accordeon {
     color: #fff;
+
+    @include tablets {
+        text-align: center;
+    }
+    
 }
 
 .member {
-    height: 0;
+    margin-bottom: rem(35px);
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &--active {
+        .member__desk {
+            height: auto;
+        }
+    }
+
+    @include tablets {
+        display: inline-flex;
+    }
 }
 
 .member__name:before {
     content: "";
-    margin-right: 10px;
-    width: 9px;
-    height: 7px;
+    margin-right: rem(10px);
+    width: rem(9px);
+    height: rem(7px);
     background: url(../img/icons/icon_1.png);
 }
 
 .member__name {
-    font-size: 14px;
+    font-size: rem(14px);
     font-family: 'Gagalin';
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(17px);
     
     &:hover {
         .member__name {
@@ -56,4 +88,24 @@
 .member__desk {
     display: flex;
     overflow: hidden;
+    height: 0;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+.member__photo {
+    margin-right: rem(17px);
+}
+
+.member__text {
+    max-width: rem(210px);
+}
+
+.member__position {
+    font-weight: bold;
+    margin-bottom: rem(10px);
+}
+

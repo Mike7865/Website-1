@@ -15,6 +15,12 @@
             opacity: 1;
         }
     }
+
+    @include tablets {
+        width: 50%;
+        height: 25%;
+
+    }
 }
 .reviews__hover {
     position: absolute;
@@ -22,12 +28,25 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 50px 19px 19px;
+    padding: rem(50px) rem(19px) rem(19px);
     opacity: 0;
     transition: background , opacity .3s;
     &:hover {
         opacity: 1;
         background-color: rgba(20, 20, 20, 0.7)
+    }
+
+    @include tablets {
+        padding-top: 10%;
+
+    }
+
+    @include phones {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 .reviews-_pic {
@@ -45,4 +64,8 @@
 .reviews__text {
     line-height: 1.72;
     margin-bottom: rem(17px);
+
+    @include phones {
+        display: none;
+    }
 }
