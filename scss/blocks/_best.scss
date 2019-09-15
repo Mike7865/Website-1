@@ -33,6 +33,23 @@
     align-items: center;
 }
 
+.best__meat-icon {
+    width: rem(97px);
+    height: rem(89px);
+}
+
+.best__hand-icon {
+    width: rem(73px);
+    height: rem(85px);
+}
+
+.best__natural-icon {
+    width: rem(88px);
+    height: rem(75px);
+} 
+
+
+
 .best__desk {
     
     @include phones {

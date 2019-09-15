@@ -21,6 +21,17 @@
     width: 50%;
 }
 
+.phone__phone-icon {
+    width: rem(12px);
+    height: rem(11px);
+    margin-top: rem(4px);
+    margin-right: rem(2px);
+} 
+
+.phone__number {
+    color: #e45028;
+}
+
 .footer__right {
     display: flex;
     width: 50%;
@@ -37,7 +48,7 @@
     align-items: center;
 }
 
-.telephone {
+.phone {
     display: flex;
 }
 
@@ -51,4 +62,24 @@
     &:last-child {
         margin-right: 0;
     }
+}
+
+.link__vk-icon {
+    width: rem(23px);
+    height: rem(13px);
+}
+
+.link__fb-icon {
+    width: rem(20px);
+    height: rem(20px);
+}
+
+.link__inst-icon {
+    width: rem(20px);
+    height: rem(20px);
+}
+
+.link__twitter-icon {
+    width: rem(20px);
+    height: rem(16px);
 }
