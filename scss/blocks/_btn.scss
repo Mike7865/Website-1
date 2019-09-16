@@ -10,3 +10,15 @@
         background-color: $black;
     }
 }
+
+.burger_compound_btn {
+    width: rem(90px);
+    height: rem(90px);
+    padding: rem(12px) rem(15px);
+    border-radius: rem(5px);
+    background-color: $red;
+    text-transform: uppercase;
+    color: #e35028;
+    font-size: rem(14px);
+    border: none;
+}

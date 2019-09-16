@@ -20,17 +20,109 @@
     justify-content: center;
 }
 
-.dark_beef_burger_compound {
+.b_c_btn_desk {
+    font-size: rem(14px);
+    font-family: $gagalin;
+    color: #ffffff;
+}
 
+.iburger-icon {
+    width: rem(46px);
+    height: rem(44px);
 }
 
 .burger_compound_list {
     background-image: url(../img/bg/compound-bg.png);
+    width: rem(270px);
+    height: rem(332px);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.burger__beef {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: rem(18px);
+    margin-top: rem(12px);
+}
+
+.burger__buns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: rem(17px);
+}
+
+.burger__salad {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: rem(15px);
+}
+
+.burger__sauce {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: rem(5px);
+}
+
+.burger__cucumber {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: rem(17px);
+}
+
+.burger__cheese {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: rem(21px);
+}
+
+
+.beef-icon {
+    width: rem(44px);
+    height: rem(39px);
+}
+
+.buns-icon {
+    width: rem(48px);
+    height: rem(30px);
+}
+
+.salad-icon {
+    width: rem(38px);
+    height: rem(38px);
+}
+
+.sauce-icon {
+    width: rem(41px);
+    height: rem(43px);
+}
+
+.cucumber-icon {
+    width: rem(43px);
+    height: rem(37px);
+}
+
+.cheese-icon {
+    width: rem(39px);
+    height: rem(34px);
+}
+
+.kkal-icon {
+    width: rem(60px);
+    height: rem(60px);
+}
+
+.kkal_desk {
+    font-size: rem(14px);
+    font-family: $gagalin;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .component__name {
     font-family: $ubuntu-medium;
     font-size: rem(14px);
+
 
 }
 
