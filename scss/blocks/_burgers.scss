@@ -1,4 +1,62 @@
 .burgers {
-    background: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
-    position: absolute;     
+    background-image: linear-gradient( to top, #f9b43b, #eb8c38 48%, 
+    #f9b43b 74%);
+}
+
+.burgers__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.burgers__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark_beef_burger_compound {
+
+}
+
+.burger_compound_list {
+    background-image: url(../img/bg/compound-bg.png);
+}
+
+.component__name {
+    font-family: $ubuntu-medium;
+    font-size: rem(14px);
+
+}
+
+.component__weight {
+    font-family: $ubuntu-light;
+    font-size: rem(14px);
+}
+
+.dark_beef_burger_desk {
+    padding-top: rem(85px);
+    margin-left: rem(20px);
+}
+
+.dark_beef_burger_text {
+    font-size: rem(14px);
+    font-family: $ubuntu-light;
+    text-align: left;
+    color: #ffffff;
+}
+
+.s-d-btn-r__arrow-scroll-icon {
+    width: rem(29px);
+    height: rem(14px);
+}
+
+.s-d-btn-l__arrow-scroll-icon {
+    width: rem(29px);
+    height: rem(14px);
 }

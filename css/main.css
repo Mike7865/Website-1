@@ -732,6 +732,19 @@ img {
   color: #f9b43b;
 }
 
+.dark_beef_burger_title {
+  margin-bottom: 10rem;
+  font-family: "Gagalin", Arial, sans-serif;
+  font-size: 4.5rem;
+  color: #ffffff;
+}
+
+.dark_beef_burger_price {
+  font-family: "Gagalin", Arial, sans-serif;
+  font-size: 4.5rem;
+  color: #e35028;
+}
+
 .s-d-btn {
   width: 1.8125rem;
   height: 0.875rem;
@@ -1031,6 +1044,94 @@ img {
   }
 }
 
+.form__radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__radio-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  opacity: 0;
+  margin-right: 20px;
+}
+
+.form__fake-radio {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.form__fake-radio:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #e35028;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.form__radio-input:checked + .form__fake-radio:before {
+  opacity: 1;
+}
+
+.form__radio_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__radio-input_1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  opacity: 0;
+  margin-right: 20px;
+}
+
+.form__fake-radio_1 {
+  width: 1rem;
+  height: 1rem;
+  border-radius: none;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.form__fake-radio_1:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #e35028;
+  border-radius: none;
+  opacity: 0;
+}
+
+.form__radio-input_1:checked + .form__fake-radio_1:before {
+  opacity: 1;
+}
+
 .fixed-menu {
   position: fixed;
   top: 5.9375rem;
@@ -1071,6 +1172,81 @@ img {
 
 .fixed-menu__dot:last-child {
   margin-bottom: 0;
+}
+
+.burgers {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b));
+  background-image: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%);
+}
+
+.burgers__container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .burgers__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.burgers__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.burger_compound_list {
+  background-image: url(../img/bg/compound-bg.png);
+}
+
+.component__name {
+  font-family: "Ubuntu-Medium", Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.component__weight {
+  font-family: "Ubuntu-Light", Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.dark_beef_burger_desk {
+  padding-top: 5.3125rem;
+  margin-left: 1.25rem;
+}
+
+.dark_beef_burger_text {
+  font-size: 0.875rem;
+  font-family: "Ubuntu-Light", Arial, sans-serif;
+  text-align: left;
+  color: #ffffff;
+}
+
+.s-d-btn-r__arrow-scroll-icon {
+  width: 1.8125rem;
+  height: 0.875rem;
+}
+
+.s-d-btn-l__arrow-scroll-icon {
+  width: 1.8125rem;
+  height: 0.875rem;
 }
 
 .team {
@@ -1434,10 +1610,5 @@ img {
 .link__twitter-icon {
   width: 1.25rem;
   height: 1rem;
-}
-
-.burgers {
-  background: -moz-linear-gradient(90deg, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%);
-  position: absolute;
 }
 /*# sourceMappingURL=main.css.map */
