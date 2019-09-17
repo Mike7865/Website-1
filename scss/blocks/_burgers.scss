@@ -15,6 +15,13 @@
     }
 }
 
+.slider__content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .b_c_btn_desk {
     font-size: rem(14px);
     font-family: $gagalin;

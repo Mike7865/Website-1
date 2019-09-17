@@ -12,6 +12,10 @@ hamburgerButton.addEventListener("click", function (e) {
     }
 });
 
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const right = document.querySelector("#slider__content");
+
 const element = document.querySelector(".team__accordeon");
 
 createAccordeon(element, {
