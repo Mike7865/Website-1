@@ -11,3 +11,30 @@ hamburgerButton.addEventListener("click", function (e) {
         hamburgerButton.classList.add("is-active");
     }
 });
+
+const element = document.querySelector(".team__accordeon");
+
+createAccordeon(element, {
+    items: [
+        {
+
+        },
+        {
+
+        },
+        {
+
+        }
+    ]
+}); 
+
+function createAccordeon(element, config) {
+    let lastActive;
+
+    element.classList.add(".team__accordeon");
+    element.addEventListener("click", function (e) {
+        if (e.target.classList.contains("member__name")){
+            
+        }
+    })
+}

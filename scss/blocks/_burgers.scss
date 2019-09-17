@@ -1,10 +1,10 @@
-.burgers {
+.slider {
     background-image: linear-gradient( to top, #f9b43b, #eb8c38 48%, 
     #f9b43b 74%);
     display: flex;
 }
 
-.burgers__container {
+.slider__container {
     height: 100%;
     display: flex;
     align-items: center;
@@ -13,12 +13,6 @@
     @include phones {
         flex-direction: column;
     }
-}
-
-.burgers__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .b_c_btn_desk {
@@ -137,13 +131,13 @@
     font-size: rem(14px);
 }
 
-.dark_beef_burger_desk {
+.burger_desk {
     padding-top: rem(85px);
     margin-left: rem(20px);
     margin-bottom: rem(160px);
 }
 
-.dark_beef_burger_text {
+.burger_text {
     font-size: rem(14px);
     font-family: $ubuntu-light;
     text-align: left;
