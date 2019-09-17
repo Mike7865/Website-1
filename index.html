@@ -42,6 +42,11 @@
                         </ul>
                     </nav>
                     <button type="button" class="btn">Заказать</button>
+                    <div class="hamburger hamburger--slider-r">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
                 </div>
             </header>
             <div class="hero__content">
@@ -114,7 +119,7 @@
         </div>
     </section>
 
-    <section class="burgers">
+    <section class="section burgers">
         <button class="s-d-btn-r" type="button">
             <svg class="s-d-btn-r__arrow-scroll-icon">
                 <use xlink:href="svg/sprite.svg#arrow-scroll"></use>
@@ -468,8 +473,10 @@
                                 <div class="form__fake-radio"></div>
                                 Оплата по карте
                             </label>
+                        </div>
+                        <div class="form__row">
                             <label class="form__radio_1">
-                                <input type="radio" name="radio" class="form__radio-input_1">
+                                <input type="checkbox" name="radio" class="form__radio-input_1">
                                 <div class="form__fake-radio_1"></div>
                                 Не перезванивать
                             </label>
@@ -568,5 +575,7 @@
             </div>
         </footer>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

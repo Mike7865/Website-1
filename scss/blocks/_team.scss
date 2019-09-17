@@ -6,6 +6,10 @@
 .team__container {
     width: 50%;
     height: 100%;
+
+    @include tablets {
+        width: 100%;
+    }
 }
 
 .team__background {
@@ -40,6 +44,8 @@
 
     @include tablets {
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
     
 }
@@ -57,7 +63,7 @@
     }
 
     @include tablets {
-        display: inline-flex;
+        
     }
 }
 
@@ -76,6 +82,11 @@
     display: flex;
     align-items: center;
     margin-bottom: rem(17px);
+
+    @include tablets {
+        justify-content: center;
+        font-size: rem(25px);
+    }
     
     &:hover {
         .member__name {
@@ -98,10 +109,18 @@
 
 .member__photo {
     margin-right: rem(17px);
+
+    @include tablets {
+        margin-right: 0;
+    }
 }
 
 .member__text {
     max-width: rem(210px);
+
+    @include tablets {
+        max-width: rem(340px);
+    }
 }
 
 .member__position {

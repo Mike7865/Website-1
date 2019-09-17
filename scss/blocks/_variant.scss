@@ -2,10 +2,18 @@
     display: flex;
     &.active {
         .variant__desk {
-            min-width: rem(630px);
+            max-width: rem(630px);
         }
         p {
             opacity: 1;
+        }
+
+        @include phones {
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            z-index: 2;
         }
     }
 }
@@ -15,6 +23,10 @@
     min-width: rem(100px);
     background: center center / cover no-repeat;
     position: relative;
+
+    @include phones {
+        min-width: rem(80px);
+    }
 }
 
 .variant__name {

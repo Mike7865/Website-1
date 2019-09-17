@@ -21,7 +21,9 @@
     }
 
     @include phones {
-        flex-direction: row;
+        display: flex;
+        margin-right: 0;
+        margin-bottom: rem(50px);
     }
 }
 
@@ -31,6 +33,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include phones {
+        min-width: rem(100px);
+        margin-right: rem(27px);
+    }
 }
 
 .best__meat-icon {
@@ -61,4 +67,8 @@
     font-size: rem(24px);
     font-family: $lifehack;
     margin-bottom: rem(33px);
+
+    @include phones {
+        margin-bottom: rem(25px);
+    }
 }

@@ -21,4 +21,9 @@
     top: 0;
     right: 0;
     bottom: 0;
+
+    @include phones {
+        left: 0;
+        justify-content: flex-end;
+    }
 }

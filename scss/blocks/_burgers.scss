@@ -1,6 +1,7 @@
 .burgers {
     background-image: linear-gradient( to top, #f9b43b, #eb8c38 48%, 
     #f9b43b 74%);
+    display: flex;
 }
 
 .burgers__container {
@@ -27,8 +28,11 @@
 }
 
 .iburger-icon {
+    display: flex;
     width: rem(46px);
     height: rem(44px);
+    margin-left: rem(82px);
+    margin-top: rem(140px);
 }
 
 .burger_compound_list {
@@ -37,6 +41,8 @@
     height: rem(332px);
     display: flex;
     flex-direction: column;
+    margin-left: rem(172px);
+    margin-top: rem(140px);
     
 }
 
@@ -134,6 +140,7 @@
 .dark_beef_burger_desk {
     padding-top: rem(85px);
     margin-left: rem(20px);
+    margin-bottom: rem(160px);
 }
 
 .dark_beef_burger_text {

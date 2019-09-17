@@ -9,16 +9,32 @@
     bottom: 0;
     left: 0;
     color: #fff;
+
+    
+    @include phones {
+        height: auto;
+        text-align: center;
+    }
 }
 
 .footer__inf {
     display: flex;
     width: 100%;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .footer__left {
     display: flex;
     width: 50%;
+
+    @include phones {
+        width: initial;
+        margin-bottom: rem(20px);
+    }
 }
 
 .phone__phone-icon {
@@ -40,6 +56,7 @@
     @include phones {
         white-space: initial;
         text-align: center;
+        width: initial;
     }
 }
 
@@ -50,6 +67,10 @@
 
 .phone {
     display: flex;
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .socials__list {

@@ -27,6 +27,11 @@
 
 .form__row {
     display: flex;
+    margin-bottom: rem(20px);
+
+    @include phones {
+        justify-content: center;
+    }
 }
 
 .form__block {
@@ -76,25 +81,28 @@
 
 .form__radio {
     display: flex;
-
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 18px;
 }
 
 .form__radio-input {
     -webkit-appearance: none;
     appearance: none;
     opacity: 0;
-    margin-right: 20px;
+    //margin-right: 20px;
 }
 
 .form__fake-radio {
-    width: rem(16px);
-    height: rem(16px);
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    flex-shrink: 0;
 
     &:before {
         content: "";
@@ -112,33 +120,37 @@
 
 .form__radio_1 {
     display: flex;
-
+    align-items: center;
 }
 
 .form__radio-input_1 {
     -webkit-appearance: none;
     appearance: none;
     opacity: 0;
-    margin-right: 20px;
+    //margin-right: 20px;
 }
 
 .form__fake-radio_1 {
-    width: rem(16px);
-    height: rem(16px);
+    width: 16px;
+    height: 16px;
     border-radius: none;
     background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    flex-shrink: 0;
 
     &:before {
         content: "";
         width: 8px;
-        height: 8px;
-        background-color: #e35028;
+        height: 3px;
+        //background-color: #e35028;
+        border-right: 3px solid $red;
+        border-top: 3px solid $red;
         border-radius: none;
         opacity: 0;
+        transform: rotate(125deg);
     }
 }
 
