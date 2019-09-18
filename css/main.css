@@ -715,7 +715,7 @@ img {
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 4px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
@@ -956,11 +956,6 @@ img {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   border: none;
-}
-
-.s-d-btn__arrow-scroll-icon {
-  width: 1.8125rem;
-  height: 0.875rem;
 }
 
 .best {
@@ -1419,45 +1414,162 @@ img {
   display: flex;
 }
 
-.slider__container {
-  height: 100%;
+.slider__control {
+  display: block;
+  position: absolute;
+  top: 50%;
+}
+
+.slider__control--left {
+  left: -0.625rem;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+}
+
+.slider__control--right {
+  right: -2.5rem;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+}
+
+.slider__wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__control-pic {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.slider__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  min-width: 100%;
+  position: relative;
 }
 
-@media screen and (max-width: 480px) {
-  .slider__container {
+.slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  min-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
+    height: 80vh;
+  }
+}
+
+.slider__ingridients {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 5.625rem;
+  height: 5.625rem;
+  padding-left: 1.875rem;
+  padding-top: 0.625rem;
+  border-radius: 0.3125rem;
+  background-color: #eb8c38;
+}
+
+.slider__ingridients-text {
+  font-family: "Gagalin", Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.ingridients {
+  width: 16.875rem;
+  height: 20.75rem;
+  background-color: #fff;
+  left: -9999px;
+  top: 0;
+  display: none;
+}
+
+.slider__picture {
+  width: 53%;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__picture {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 .slider__content {
-  height: 100%;
+  width: 47%;
+  text-align: left;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.slider__title {
+  color: #fff;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__title {
+    text-align: center;
+  }
+}
+
+.slider__text {
+  font-family: "Ubuntu-Light", Arial, sans-serif;
+  margin-bottom: 2.25rem;
+}
+
+.slider__buy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
-.b_c_btn_desk {
-  font-size: 0.875rem;
+@media screen and (max-width: 768px) {
+  .slider__buy {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.slider__price {
   font-family: "Gagalin", Arial, sans-serif;
-  color: #ffffff;
+  font-size: 4.5rem;
+  margin-right: 1.8125rem;
+  color: #e35028;
+}
+
+.slider__currency {
+  color: #e35028;
+  font-size: 1.875rem;
 }
 
 .iburger-icon {
@@ -1467,21 +1579,6 @@ img {
   width: 2.875rem;
   height: 2.75rem;
   margin-left: 5.125rem;
-  margin-top: 8.75rem;
-}
-
-.burger_compound_list {
-  background-image: url(../img/bg/compound-bg.png);
-  width: 16.875rem;
-  height: 20.75rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-left: 10.75rem;
   margin-top: 8.75rem;
 }
 
@@ -1581,12 +1678,12 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.component__name {
+.ingridient__name {
   font-family: "Ubuntu-Medium", Arial, sans-serif;
   font-size: 0.875rem;
 }
 
-.component__weight {
+.ingridient__weight {
   font-family: "Ubuntu-Light", Arial, sans-serif;
   font-size: 0.875rem;
 }
@@ -1844,8 +1941,8 @@ img {
   .variant.active {
     position: absolute;
     top: 0;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     z-index: 2;
   }
 }

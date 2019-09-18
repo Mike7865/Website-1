@@ -1,50 +1,9 @@
-.slider {
-    background-image: linear-gradient( to top, #f9b43b, #eb8c38 48%, 
-    #f9b43b 74%);
-    display: flex;
-}
-
-.slider__container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    @include phones {
-        flex-direction: column;
-    }
-}
-
-.slider__content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.b_c_btn_desk {
-    font-size: rem(14px);
-    font-family: $gagalin;
-    color: #ffffff;
-}
-
 .iburger-icon {
     display: flex;
     width: rem(46px);
     height: rem(44px);
     margin-left: rem(82px);
     margin-top: rem(140px);
-}
-
-.burger_compound_list {
-    background-image: url(../img/bg/compound-bg.png);
-    width: rem(270px);
-    height: rem(332px);
-    display: flex;
-    flex-direction: column;
-    margin-left: rem(172px);
-    margin-top: rem(140px);
-    
 }
 
 .burger__beef {
@@ -126,14 +85,14 @@
     color: rgba(255, 255, 255, 0.5);
 }
 
-.component__name {
+.ingridient__name {
     font-family: $ubuntu-medium;
     font-size: rem(14px);
 
 
 }
 
-.component__weight {
+.ingridient__weight {
     font-family: $ubuntu-light;
     font-size: rem(14px);
 }

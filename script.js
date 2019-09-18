@@ -3,7 +3,7 @@ var hamburgerMenu = document.querySelector(".nav");
 
 hamburgerButton.addEventListener("click", function (e) {
     e.preventDefault();
-    if(hamburgerMenu.classList.contains("archive")) {
+    if(hamburgerMenu.classList.contains("active")) {
         hamburgerMenu.classList.remove("active");
         hamburgerButton.classList.remove("is-active");
     } else {
