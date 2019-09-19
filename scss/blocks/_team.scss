@@ -117,6 +117,7 @@
 
 .member__text {
     max-width: rem(210px);
+    color: #fff;
 
     @include tablets {
         max-width: rem(340px);

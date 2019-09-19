@@ -342,28 +342,28 @@ template {
 }
 
 @font-face {
-  font-family: 'Ubuntu-Light';
+  font-family: 'Ubuntu-Medium';
   src: url("../fonts/subset-Ubuntu-Medium.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu-Light';
   src: url("../fonts/subset-Ubuntu-Light.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ubuntu-Medium';
+  font-family: 'Ubuntu-Bold';
   src: url("../fonts/subset-Ubuntu-Bold.woff2") format("woff2"), url("../fonts/subset-Ubuntu-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Ubuntu-Bold';
+  font-family: 'Ubuntu';
   src: url("../fonts/subset-Ubuntu.woff2") format("woff2"), url("../fonts/subset-Ubuntu.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -841,6 +841,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 0.9375rem;
+  font-family: "Ubuntu-Medium", Arial, sans-serif;
 }
 
 .nav__item:after {
@@ -905,23 +906,12 @@ img {
   text-transform: uppercase;
   color: #fff;
   font-size: 0.8125rem;
+  font-family: "Ubuntu-Medium", Arial, sans-serif;
   border: none;
 }
 
 .btn--gray {
   background-color: #2f3234;
-}
-
-.burger_compound_btn {
-  width: 5.625rem;
-  height: 5.625rem;
-  padding: 0.75rem 0.9375rem;
-  border-radius: 0.3125rem;
-  background-color: #e35028;
-  text-transform: uppercase;
-  color: #e35028;
-  font-size: 0.875rem;
-  border: none;
 }
 
 .title--centered {
@@ -1242,7 +1232,6 @@ img {
 .form__input--textarea {
   resize: none;
   height: 6.875rem;
-  width: 28.75rem;
 }
 
 .form__btn {
@@ -1252,7 +1241,9 @@ img {
   text-transform: uppercase;
   color: #fff;
   font-size: 0.8125rem;
+  font-family: "Ubuntu-Medium", Arial, sans-serif;
   border: none;
+  margin-right: 1.25rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -1888,6 +1879,7 @@ img {
 
 .member__text {
   max-width: 13.125rem;
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -2099,6 +2091,7 @@ img {
 
 .phone__number {
   color: #e45028;
+  font-family: "Ubuntu-Bold", Arial, sans-serif;
 }
 
 .footer__right {

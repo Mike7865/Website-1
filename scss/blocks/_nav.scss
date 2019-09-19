@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     margin-right: rem(15px);
+    font-family: $ubuntu-medium;
 
     &:after {
         content: "";

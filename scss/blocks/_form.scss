@@ -59,7 +59,6 @@
     &--textarea {
         resize: none;
         height: rem(110px);
-        width: rem(460px);
     }
 }
 
@@ -70,7 +69,9 @@
     text-transform: uppercase;
     color: #fff;
     font-size: rem(13px);
+    font-family: $ubuntu-medium;
     border: none;
+    margin-right: rem(20px);
 
     @include phones {
         display: flex;
