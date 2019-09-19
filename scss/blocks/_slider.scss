@@ -10,11 +10,29 @@
     top: 50%;
     &--left {
         left: rem(-10px);
-        transform: translateY(-50%) rotate(90deg);
+        transform: translateY(-50%) translateX(-119%) rotate(90deg);
+        @include tablets {
+            transform: translateY(967%) translateX(-45%) rotate(90deg);
+        }
+        @include phones {
+            transform: translateY(179%) translateX(-46%) rotate(90deg);
+        }
     }
     &--right {
         right: rem(-30px);
-        transform: translateY(-50%) rotate(-90deg);
+        transform: translateY(-50%) translateX(80%) rotate(-90deg);
+        @include tablets {
+            transform: translateY(-152%) translateX(-84%) rotate(-90deg); 
+        }
+        @include phones {
+            transform: translateY(-796%) translateX(46%) rotate(-90deg);
+        }
+    }
+    @include tablets {
+        right: rem(-10px);
+    }
+    @include phones {
+        width: 70%;
     }
 }
 
@@ -42,39 +60,87 @@
         flex-direction: column;
         text-align: center;
         height: 80vh;
+        justify-content: center;
+        align-items: center;
+    }
+    @include phones {
+        height: 95vh;
     }
 }
 
 .slider__ingridients {
-    position: relative;
+    position: absolute;
     left: 0;
     top: 0;
     width: rem(90px);
     height: rem(90px);
-    padding-left: rem(30px);
-    padding-top: rem(10px);
     border-radius: rem(5px);
+    padding-top: rem(14px);
     background-color: #eb8c38;
-    //&:hover {
-        //.ingridients {
-            //left: 100%;
-            //color: $red;
-        //}
-    //}
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+        .ingridients {
+            left: 100%;
+            opacity: 1;
+        }
+    }
+    @include tablets {
+        left: 0;
+    }
 }
+
+.slider__ingridients-icon {
+    max-width: rem(46px);
+    max-height: rem(44px);
+}
+
 
 .slider__ingridients-text {
     font-family: $gagalin;
     font-size: rem(14px);
+    color: #fff;
+    text-decoration: none;
 }
 
-.ingridients {
-    width: rem(270px);
-    height: rem(332px);
-    background-color: #fff;
-    left: -9999px;
-    top: 0;
-    display: none;
+.slider__kkal {
+    position: absolute;
+    width: rem(60px);
+    height: rem(60px);
+    bottom: rem(20px);
+    left: 0;
+    background: url("../svg/kkal.svg") center center / contain no-repeat;
+    @include tablets {
+        right: rem(120px);
+        left: initial;
+        top: 0;
+        right: 0;
+    }
+}
+
+//.//kkal__icon {
+    //width: rem(60px);
+    //height: rem(60px);
+//}
+
+.kkal__desk {
+    position: absolute;
+    top: rem(27px);
+    padding-left: rem(13px);
+    font-size: rem(14px);
+    font-family: $gagalin;
+    color: #fff;
+    font-size: rem(20px);
+}
+
+.kkal__text {
+    position: absolute;
+    top: rem(55px);
+    padding-left: rem(13px);
+    padding-top: rem(5px);
+    font-size: rem(14px);
+    font-family: $gagalin;
+    color: #fff;
 }
 
 .slider__picture {
@@ -92,8 +158,12 @@
     text-align: left;
     color: #fff;
     @include tablets {
-        width: 100%;
+        width: 74%;
         text-align: center;
+        margin: 0 auto;
+    }
+    @include phones {
+        width: 90%;
     }
 }
 

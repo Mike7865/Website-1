@@ -1,121 +1,36 @@
-.iburger-icon {
+.ingridients {
+    background-color: #fff;
+    padding: rem(20px);
+    color: #000;
+    left: -9999px;
+    top: 0;
+    position: absolute;
+    //display: none;
+}
+
+.ingridients__item {
     display: flex;
-    width: rem(46px);
-    height: rem(44px);
-    margin-left: rem(82px);
-    margin-top: rem(140px);
+    align-items: center;
+    margin-right: rem(10px);
 }
 
-.burger__beef {
+.ingridients__icon {
+    max-width: rem(46px);
+    max-height: rem(44px);
     display: flex;
-    justify-content: space-around;
-    margin-bottom: rem(18px);
-    margin-top: rem(12px);
-}
-
-.burger__buns {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: rem(17px);
-}
-
-.burger__salad {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: rem(15px);
-}
-
-.burger__sauce {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: rem(5px);
-}
-
-.burger__cucumber {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: rem(17px);
-}
-
-.burger__cheese {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: rem(21px);
-}
-
-
-.beef-icon {
-    width: rem(44px);
-    height: rem(39px);
-}
-
-.buns-icon {
-    width: rem(48px);
-    height: rem(30px);
-}
-
-.salad-icon {
-    width: rem(38px);
-    height: rem(38px);
-}
-
-.sauce-icon {
-    width: rem(41px);
-    height: rem(43px);
-}
-
-.cucumber-icon {
-    width: rem(43px);
-    height: rem(37px);
-}
-
-.cheese-icon {
-    width: rem(39px);
-    height: rem(34px);
-}
-
-.kkal-icon {
-    width: rem(60px);
-    height: rem(60px);
-}
-
-.kkal_desk {
-    font-size: rem(14px);
-    font-family: $gagalin;
-    color: rgba(255, 255, 255, 0.5);
+    margin-right: rem(10px);
 }
 
 .ingridient__name {
     font-family: $ubuntu-medium;
     font-size: rem(14px);
-
-
+    margin-right: rem(20px);
 }
 
 .ingridient__weight {
     font-family: $ubuntu-light;
     font-size: rem(14px);
+    margin-left: auto;
+    white-space: nowrap;
 }
 
-.burger_desk {
-    padding-top: rem(85px);
-    margin-left: rem(20px);
-    margin-bottom: rem(160px);
-}
-
-.burger_text {
-    font-size: rem(14px);
-    font-family: $ubuntu-light;
-    text-align: left;
-    color: #ffffff;
-}
-
-.s-d-btn-r__arrow-scroll-icon {
-    width: rem(29px);
-    height: rem(14px);
-}
-
-.s-d-btn-l__arrow-scroll-icon {
-    width: rem(29px);
-    height: rem(14px);
-}
