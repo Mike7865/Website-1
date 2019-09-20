@@ -56,11 +56,11 @@
     &:last-child {
         margin-bottom: 0;
     }
-    &--active {
-        .member__desk {
-            height: auto;
-        }
-    }
+    //&--active {
+        //.member__desk {
+            //height: auto;
+        //}
+    //}
 
     @include tablets {
         
@@ -105,6 +105,10 @@
         flex-direction: column;
         align-items: center;
     }
+}
+
+.member__desk.active {
+    height: auto;
 }
 
 .member__photo {

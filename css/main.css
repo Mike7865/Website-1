@@ -1808,10 +1808,6 @@ img {
   margin-bottom: 0;
 }
 
-.member--active .member__desk {
-  height: auto;
-}
-
 .member__name:before {
   content: "";
   margin-right: 0.625rem;
@@ -1865,6 +1861,10 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.member__desk.active {
+  height: auto;
 }
 
 .member__photo {
