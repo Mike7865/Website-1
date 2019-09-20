@@ -55,3 +55,56 @@ team__accordeon.addEventListener("click", function (e) {
 
 
 
+let menu__accordeon = document.querySelector("#menu__accordeon");
+
+menu__accordeon.addEventListener("click", function (e) {
+    e.preventDefault();
+    let target = e.target;
+    let currentTarget = target.nextElementSibling;
+
+    function clear() {
+        let activeContent = document.querySelector(".variant__desk.active");
+        if (activeContent) {
+            activeContent.classList.remove("active");
+        }
+    }
+
+    if (target.classList.contains("variant__type")) {
+        if (currentTarget.classList.contains("active")) {
+            currentTarget.classList.remove("active");
+        } else {
+            clear(); 
+            currentTarget.classList.add("active");
+        }
+    }
+});
+
+
+
+const left = document.querySelector("#left");
+const right = document.querySelector("#right");
+const slider__list = document.querySelector("#slider__list");
+
+slider__list.style.right = currentRight + "px";
+
+right.addEventListener("click", function() {
+    if (currentRight < maxRight) {
+        currentRight += step;
+        slider__list.style.right = currentRight + "px";
+    } else {
+        currentRight = minRight;
+        slider__list.style.right = currentRight + "px";
+    }
+});
+
+left.addEventListener("click", function() {
+    if (currentRight > minRight) {
+        currentRight -= step;
+        slider__list.style.right = currentRight + "px";
+    } else {
+        currentRight = maxRight;
+        slider__list.style.right = currentRight + "px";
+    }
+});
+
+

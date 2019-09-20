@@ -54,3 +54,7 @@
         transition-delay: .3s;
     }
 }
+
+.variant__desk.active {
+    max-width: auto;
+}
