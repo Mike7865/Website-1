@@ -90,20 +90,20 @@ slider__list.style.right = currentRight + "px";
 right.addEventListener("click", function() {
     if (currentRight < maxRight) {
         currentRight += step;
-        slider__list.style.right = currentRight + "px";
+        slider__list.style.right = currentRight + "941px";
     } else {
         currentRight = minRight;
-        slider__list.style.right = currentRight + "px";
+        slider__list.style.right = currentRight + "941px";
     }
 });
 
 left.addEventListener("click", function() {
     if (currentRight > minRight) {
         currentRight -= step;
-        slider__list.style.right = currentRight + "px";
+        slider__list.style.right = currentRight + "941px";
     } else {
         currentRight = maxRight;
-        slider__list.style.right = currentRight + "px";
+        slider__list.style.right = currentRight + "941px";
     }
 });
 
