@@ -680,17 +680,17 @@
     <section class="section order">
         <div class="container">
             <div class="title title--order">Закажите доставку</div>
-            <div class="form">
+            <div class="form" id="form">
                 <form action="" class="form__elem">
                     <div class="form__column">                     
                         <div class="form__row">
                             <label class="form__block">
                                 <div class="form__block-title">Имя</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" placeholder="Имя" name="name" required>
                             </label>
                             <label class="form__block">
                                 <div class="form__block-title">Телефон</div>
-                                <input type="text" class="form__input">
+                                <input type="text" class="form__input" placeholder="Телефон" name="phone" required>
                             </label>
                         </div>
                         <div class="form__row">
@@ -743,7 +743,7 @@
                             </label>
                         </div>
                         <div class="form__row">
-                            <button type="submit" class="form__btn">Заказать</button>
+                            <button type="submit" class="form__btn" id="form__btn">Заказать</button>
                             <button type="reset">Очистить</button>
                         </div>
                     </div>
@@ -751,6 +751,41 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const form = document.querySelector("#form");
+        const form__btn = document.querySelector("#form__btn");
+
+        form__btn.addEventListener("click", function(event) {
+            event.preventDefault();
+
+            function validateForm(form) {
+                let valid = true;
+
+                if (!validateField(form.elements.name)) {
+                    valid = false;
+                }
+
+                if (!validateField(form.elements.phone)) {
+                    valid = false;
+                }
+
+                return valid;
+            }
+
+            if (validateForm(form)) {
+                const data = {
+                    name: form.elements.name.value,
+                    phone: form.elements.phone.value,
+                };
+
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
+                xhr.send(JSON.stringify(data));
+            }
+            
+        });
+    </script>
   
     <ul class="fixed-menu">
         <li class="fixed-menu__item fixed-menu__item--active">
