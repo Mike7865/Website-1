@@ -56,10 +56,12 @@
     display: flex;
     position: relative;
     min-width: 100%;
+    min-height: rem(470px);
+    align-items: center;
     @include tablets {
         flex-direction: column;
         text-align: center;
-        height: 80vh;
+        height: 90vh;
         justify-content: center;
         align-items: center;
     }
@@ -87,6 +89,7 @@
     }
     @include tablets {
         left: 0;
+        margin-left: rem(100px);
     }
 }
 
@@ -115,6 +118,7 @@
         left: initial;
         top: 0;
         right: 0;
+        margin-right: rem(100px);
     }
 }
 

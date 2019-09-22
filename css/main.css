@@ -1481,6 +1481,10 @@ img {
   display: flex;
   position: relative;
   min-width: 100%;
+  min-height: 29.375rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1490,7 +1494,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    height: 80vh;
+    height: 90vh;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1527,6 +1531,7 @@ img {
 @media screen and (max-width: 768px) {
   .slider__ingridients {
     left: 0;
+    margin-left: 6.25rem;
   }
 }
 
@@ -1557,6 +1562,7 @@ img {
     left: initial;
     top: 0;
     right: 0;
+    margin-right: 6.25rem;
   }
 }
 
