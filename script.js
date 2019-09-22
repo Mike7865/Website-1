@@ -108,3 +108,119 @@ left.addEventListener("click", function() {
 });
 
 
+
+const form = document.querySelector("#form");
+const form__btn = document.querySelector("#form__btn");
+
+form__btn.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    function validateForm(form) {
+        let valid = true;
+
+        if (!validateField(form.elements.name)) {
+            valid = false;
+        }
+
+        if (!validateField(form.elements.phone)) {
+            valid = false;
+        }
+
+        return valid;
+    }
+        
+
+    if (validateForm(form)) {
+        const data = {
+            name: form.elements.name.value,
+            phone: form.elements.phone.value,
+        };
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
+        xhr.send(JSON.stringify(data));
+    }
+});
+
+
+
+const openButton = document.querySelector("#btn--gray");
+const successOverlay = createOverlay("Подробнее");
+
+openButton.addEventListener("click", function() {
+  document.body.appendChild(successOverlay);
+});
+
+function createOverlay(content) {
+  const overlayElement = document.createElement("div");
+  overlayElement.classList.add("overlay");
+
+  const template = document.querySelector("#overlayTemplate");
+  overlayElement.innerHTML = template.innerHTML;
+
+  const closeElement = overlayElement.querySelector(".close");
+  closeElement.addEventListener("click", function() {
+    document.body.removeChild(overlayElement);
+  });
+
+  const contentElement = overlayElement.querySelector(".overlay__content");
+  contentElement.innerHTML = content;
+
+  return overlayElement;
+}
+
+
+
+
+const openButton = document.querySelector("#form__btn");
+const successOverlay = createOverlay("Заказ отправлен");
+
+openButton.addEventListener("click", function() {
+  document.body.appendChild(successOverlay);
+});
+
+function createOverlay(content) {
+  const overlayElement = document.createElement("div");
+  overlayElement.classList.add("overlay");
+
+  const template = document.querySelector("#overlayTemplate");
+  overlayElement.innerHTML = template.innerHTML;
+
+  const closeElement = overlayElement.querySelector(".close");
+  closeElement.addEventListener("click", function() {
+    document.body.removeChild(overlayElement);
+  });
+
+  const contentElement = overlayElement.querySelector(".overlay__content");
+  contentElement.innerHTML = content;
+
+  return overlayElement;
+}
+
+
+
+const closeButton = document.querySelector("#form__btn");
+const unsuccessOverlay = createOverlay("Отправка не удалась");
+
+openButton.addEventListener("click", function() {
+  document.body.appendChild(successOverlay);
+});
+
+function createOverlay(content) {
+  const overlayElement = document.createElement("div");
+  overlayElement.classList.add("overlay");
+
+  const template = document.querySelector("#overlayTemplate");
+  overlayElement.innerHTML = template.innerHTML;
+
+  const closeElement = overlayElement.querySelector(".close");
+  closeElement.addEventListener("click", function() {
+    document.body.removeChild(overlayElement);
+  });
+
+  const contentElement = overlayElement.querySelector(".overlay__content");
+  contentElement.innerHTML = content;
+
+  return overlayElement;
+}
+

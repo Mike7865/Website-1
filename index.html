@@ -751,41 +751,6 @@
             </div>
         </div>
     </section>
-
-    <script>
-        const form = document.querySelector("#form");
-        const form__btn = document.querySelector("#form__btn");
-
-        form__btn.addEventListener("click", function(event) {
-            event.preventDefault();
-
-            function validateForm(form) {
-                let valid = true;
-
-                if (!validateField(form.elements.name)) {
-                    valid = false;
-                }
-
-                if (!validateField(form.elements.phone)) {
-                    valid = false;
-                }
-
-                return valid;
-            }
-
-            if (validateForm(form)) {
-                const data = {
-                    name: form.elements.name.value,
-                    phone: form.elements.phone.value,
-                };
-
-                const xhr = new XMLHttpRequest();
-                xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
-                xhr.send(JSON.stringify(data));
-            }
-            
-        });
-    </script>
   
     <ul class="fixed-menu">
         <li class="fixed-menu__item fixed-menu__item--active">
@@ -873,6 +838,13 @@
             </div>
         </footer>
     </section>
+    
+    <div type="template" id="overlayTemplate">
+        <div class="overlay__container">
+            <a class="close" href="#">x</a>
+            <div class="overlay__content"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
