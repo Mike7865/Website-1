@@ -1505,6 +1505,8 @@ img {
   display: flex;
   min-width: 100%;
   position: relative;
+  -webkit-transition: right .3s;
+  transition: right .3s;
 }
 
 .slider__item {
