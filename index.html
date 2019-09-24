@@ -789,8 +789,28 @@
             </section>
 
             <section class="section how_work">
-                <div class="how_work-_container">
+                <div class="how_work__container">
                     <div class="how_work__title">как мы работаем</div>
+                    <div class="video__player">
+                        <video id="player" poster="img/content/video.png">
+                            <source src="./src/video.mp4" type="video/mp4"> 
+                        </video>
+                        <img src="img/content/play_white.png" alt="" class="play video__player-img">
+                        <div class="video__toolbar">
+                            <div class="duration">
+                                <button class="play duration__img" id="play" >
+                                    <img src="svg/sprite.svg#play" alt="">
+                                </button>
+                                <input type="range" class="duration__length" id="durationLevel">
+                            </div>
+                            <div class="sound">
+                                <img src="svg/sprite.svg#mic" class="sound__mic" id="mic" alt="">
+                                <div class="sound__volume">
+                                    <input type="range" class="duration__length duration__length--other" id="micLevel">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -804,10 +824,12 @@
                                     <label class="form__block">
                                         <div class="form__block-title">Имя</div>
                                         <input type="text" class="form__input" placeholder="Имя" name="name" required>
+                                        <div class="validate"></div>
                                     </label>
                                     <label class="form__block">
                                         <div class="form__block-title">Телефон</div>
                                         <input type="text" class="form__input" placeholder="Телефон" name="phone" required>
+                                        <div class="validate"></div>
                                     </label>
                                 </div>
                                 <div class="form__row">
@@ -959,8 +981,16 @@
         </li>
     </ul>
 
+    <script type="template" id="overlayTemplate">
+        <div class="overlay__container">
+            <a class="close" href="#">x</a>
+            <div class="overlay__content"></div>
+        </div>
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="player.js"></script>
 </body>
 
 </html>
