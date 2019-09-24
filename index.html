@@ -531,7 +531,7 @@
                     <div class="team__background">
                         <h2 class="title team__title">КОМАНДА</h2>
                         <div class="team__desk">
-                            <ul id="team__accordeon">
+                            <ul class=team__accordeon" id="team__accordeon">
                                 <li class="member">
                                     <a href="#" class="member__name">дэниэл рэдклиф</a>
                                     <div class="member__desk">
@@ -788,7 +788,7 @@
                 </ul>
             </section>
 
-            <section class="how_work">
+            <section class="section how_work">
                 <div class="how_work-_container">
                     <div class="how_work__title">как мы работаем</div>
                 </div>
@@ -838,7 +838,8 @@
                             <div class="form__column">
                                 <label class="form__block">
                                     <div class="form__block-title">Комментарий</div>
-                                    <textarea class="form__input form__input--textarea"></textarea>
+                                    <textarea class="form__input form__input--textarea" name="comment" required></textarea>
+                                    <div class="validate"></div>
                                 </label>
                                 <div class="form__row">
                                     <label class="form__radio">
@@ -958,13 +959,7 @@
         </li>
     </ul>
 
-    <div type="template" id="overlayTemplate">
-        <div class="overlay__container">
-            <a class="close" href="#">x</a>
-            <div class="overlay__content"></div>
-        </div>
-    </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 

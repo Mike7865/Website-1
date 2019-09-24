@@ -41,6 +41,7 @@
 
 .team__accordeon {
     color: #fff;
+    min-height: rem(450px);
 
     @include tablets {
         text-align: center;

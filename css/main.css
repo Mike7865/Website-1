@@ -1812,6 +1812,7 @@ img {
 
 .team__accordeon {
   color: #fff;
+  min-height: 28.125rem;
 }
 
 @media screen and (max-width: 768px) {
