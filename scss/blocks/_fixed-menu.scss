@@ -42,3 +42,7 @@
         margin-bottom: 0;
     }
 }
+
+.fixed-menu__dot:active + .fixed-menu__dot:before {
+    opacity: 1;
+}

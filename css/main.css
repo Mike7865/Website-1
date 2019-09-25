@@ -1145,29 +1145,31 @@ img {
 }
 
 .how_work__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
   text-align: center;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .how_work__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-family: "Gagalin", Arial, sans-serif;
   font-size: 3.8125rem;
   color: #2f3234;
   text-align: center;
-  margin-left: 31.25rem;
-  margin-bottom: 32.75rem;
 }
 
 .video__player {
   position: relative;
-  width: 100%;
+  max-width: 660px;
+  max-height: 370px;
+}
+
+.video__player-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .video__toolbar {
@@ -1178,9 +1180,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .duration {
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1221,6 +1227,7 @@ img {
   border-radius: 0.0625rem;
   background-color: #626262;
   outline: none;
+  -webkit-appearance: none;
 }
 
 .duration__length--other {
@@ -1248,6 +1255,25 @@ img {
 .duration__circle--high {
   right: 0;
   position: absolute;
+}
+
+.sound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sound__volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 10px;
 }
 
 .order {
@@ -1508,6 +1534,10 @@ img {
 
 .fixed-menu__dot:last-child {
   margin-bottom: 0;
+}
+
+.fixed-menu__dot:active + .fixed-menu__dot:before {
+  opacity: 1;
 }
 
 .slider {
@@ -2127,6 +2157,9 @@ img {
 
 .contacts {
   position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .contacts__container {
@@ -2152,7 +2185,7 @@ img {
 }
 
 .map {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
 }
 

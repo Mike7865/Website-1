@@ -64,7 +64,7 @@ function init() {
             },
             {
                 iconLayout: 'default#image',
-                iconImageHref: 'svg/sprite.svg#map-marker',
+                iconImageHref: 'svg/map-marker.svg',
                 iconImageSize: [46, 57],
                 iconImageOffset: [-23, -57],
                 iconImageClipRect: [[415, 0], [461, 57]]

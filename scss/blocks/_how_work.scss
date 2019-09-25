@@ -4,25 +4,28 @@
 }
 
 .how_work__container {
-    display: flex;
-    height: 100%;
     text-align: center;
-    position: relative;
+    align-items: center;
 }
 
 .how_work__title {
-    display: flex;
     font-family: $gagalin;
     font-size: rem(61px);
     color: #2f3234;
     text-align: center;
-    margin-left: rem(500px);
-    margin-bottom: rem(524px);
 }
 
 .video__player {
     position: relative;
-    width: 100%;
+    max-width: 660px;
+    max-height: 370px;
+}
+
+.video__player-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .video__toolbar {
@@ -31,9 +34,11 @@
     background-color: #3e3e3e;
     margin-top: rem(-9px);
     display: flex;
+    justify-content: space-between;
 }
 
 .duration {
+    width: 70%;
     display: flex;
     align-items: center;
     flex: 1;
@@ -66,6 +71,7 @@
     border-radius: rem(1px);
     background-color: #626262;
     outline: none;
+    -webkit-appearance: none;
 }
 
 .duration__length--other {
@@ -93,4 +99,15 @@
 .duration__circle--high {
     right: 0;
     position: absolute;
+}
+
+.sound {
+    display: flex;
+}
+
+.sound__volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
 }
