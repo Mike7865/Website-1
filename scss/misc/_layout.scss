@@ -4,6 +4,7 @@
 
 html {
     font-size: rem(16px);
+    height: 100%;
 
     @include tablets {
         font-size: rem(15px);
