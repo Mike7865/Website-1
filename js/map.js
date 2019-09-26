@@ -2,46 +2,46 @@ ymaps.ready(init);
 
 var placemarks = [
     {
-        latitude: 59.97,
-        longitude: 30.31,
-        hintContent: '<div class="map__hint">ул. Литераторов, д. 19</div>',
+        latitude: 59.947179,
+        longitude: 30.384813,
+        hintContent: '<div class="map__hint">Тверская улица, д. 16</div>',
         balloonContent: [
             '<div class="map__balloon">',
             '<img class="map__burger-img" src="img/content/burger.png" alt="Бургер" alt=""/>',
-            'Самые вкусные бургеры у нас! Заходите по адресу: ул. Литераторов, д. 19',
+            'Самые вкусные бургеры у нас! Заходите по адресу: Тверская улица, д. 16',
             '</div>'
         ]
     },
     {
-        latitude: 59.94,
-        longitude: 30.25,
-        hintContent: '<div class="map__hint">Малый проспект В О, д 64</div>',
+        latitude: 59.891696,
+        longitude: 30.316082,
+        hintContent: '<div class="map__hint">Московский проспект, д. 103к2</div>',
         balloonContent: [
             '<div class="map__balloon">',
             '<img class="map__burger-img" src="img/content/burger.png" alt="Бургер" alt=""/>',
-            'Самые вкусные бургеры у нас! Заходите по адресу: Малый проспект В О, д 64',
+            'Самые вкусные бургеры у нас! Заходите по адресу: Московский проспект, д. 103к2',
             '</div>'
         ]
     },
     {
-        latitude: 59.93,
-        longitude: 30.34,
-        hintContent: '<div class="map__hint">наб. реки Фонтанки, д. 56</div>',
+        latitude: 59.973930,
+        longitude: 30.311348,
+        hintContent: '<div class="map__hint">улица Чапыгина, д. 13А</div>',
         balloonContent: [
             '<div class="map__balloon">',
             '<img class="map__burger-img" src="img/content/burger.png" alt="Бургер" alt=""/>',
-            'Самые вкусные бургеры у нас! Заходите по адресу: наб. реки Фонтанки, д. 56',
+            'Самые вкусные бургеры у нас! Заходите по адресу: улица Чапыгина, д. 13А',
             '</div>'
         ]
     },
     {
-        latitude: 59.95,
-        longitude: 30.32,
-        hintContent: '<div class="map__hint">Невский проспект, д. 36</div>',
+        latitude: 59.915028,
+        longitude: 30.486528,
+        hintContent: '<div class="map__hint">Товарищеский проспект, д. 20/27</div>',
         balloonContent: [
             '<div class="map__balloon">',
             '<img class="map__burger-img" src="img/content/burger.png" alt="Бургер" alt=""/>',
-            'Самые вкусные бургеры у нас! Заходите по адресу: наб. реки Фонтанки, д. 56',
+            'Самые вкусные бургеры у нас! Заходите по адресу: Товарищеский проспект д. 20/27',
             '</div>'
         ]
     }
