@@ -6,16 +6,16 @@ let soundLevel;
 // документ полностью загружен
 $().ready(function(){
     video = document.getElementById("player"); 
-​
+
     // вешаем обработчик события onclick на тег video
     video.addEventListener('click', playStop);
-​
+
     // обработчики событий для кнопок play
     let playButtons = document.querySelectorAll(".play");
     for (let i = 0; i < playButtons.length;i++){
         playButtons[i].addEventListener('click',playStop);
     }
-​
+
     // обработчик событий для кнопки динамик
     let micControl = document.getElementById("mic");
     micControl.addEventListener('click',soundOf);
@@ -27,19 +27,19 @@ $().ready(function(){
     durationControl.addEventListener('mousedown', stopInterval); 
     durationControl.min = 0;
     durationControl.value = 0;    
-​
+
     // обработчики событий для ползунка громокости
     soundControl = document.getElementById("micLevel");    
     soundControl.addEventListener('click', changeSoundVolume);
     soundControl.addEventListener('onmousemove', changeSoundVolume);
-​
+
     // задаем максимальные и минимальные значения громокости
     soundControl.min = 0;
     soundControl.max = 10;
     // присваиваем ползунку максимальное значение
     soundControl.value = soundControl.max;
     
-​
+
     //обрабатываем окончание видео
     video.addEventListener('ended', function () {
         $(".video__player-img").toggleClass("video__player-img--active");
@@ -50,7 +50,7 @@ $().ready(function(){
         $('.duration__img').removeClass('active');
     }, false);
 });
-​
+
 /*
  Воспроизведение видео
 */
@@ -75,12 +75,12 @@ function playStop(){
         // document.webkitExitFullscreen(); //выйти из полноэкранного режима
     }
 }
-​
+
 function stopInterval(){
     video.pause();
     clearInterval(intervalId);
 }
-​
+
 /*
     Реализует возможность перемотки нашего видео
 */
@@ -94,16 +94,16 @@ function setVideoDuration(){
     console.log(video.currentTime);
     intervalId = setInterval(updateDuration,1000/66);
 }
-​
-​
+
+
 /*
   Функция для обновления позиции ползунка продолжительности видео.   
 */
 function updateDuration(){    
     durationControl.value = video.currentTime;
 }
-​
-​
+
+
 /*
     Управление звуком
 */
@@ -126,7 +126,7 @@ function soundOf(){
         soundControl.value = 0;
     }    
 }
-​
+
 /*
     Управление звуком видео
 */

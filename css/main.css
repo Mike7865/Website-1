@@ -1233,7 +1233,7 @@ img {
 
 .duration__length {
   width: 96%;
-  height: 0.4375rem;
+  height: 0.25rem;
   border-radius: 0.0625rem;
   background-color: #626262;
   outline: none;
@@ -1271,6 +1271,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.sound__mic {
+  width: 18px;
+  height: 22px;
+  color: #626262;
 }
 
 .sound__volume {

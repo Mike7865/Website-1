@@ -76,7 +76,7 @@
 
 .duration__length {
     width: 96%;
-    height: rem(7px);
+    height: rem(4px);
     border-radius: rem(1px);
     background-color: #626262;
     outline: none;
@@ -112,6 +112,12 @@
 
 .sound {
     display: flex;
+}
+
+.sound__mic {
+    width: 18px;
+    height: 22px;
+    color: #626262;
 }
 
 .sound__volume {
