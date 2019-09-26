@@ -1523,7 +1523,7 @@ img {
   }
 }
 
-.fixed-menu__item--active .fixed-menu__dot {
+.fixed-menu__item.active .fixed-menu__dot {
   border-color: white;
 }
 
@@ -1551,10 +1551,6 @@ img {
 
 .fixed-menu__dot:last-child {
   margin-bottom: 0;
-}
-
-.fixed-menu__dot:active + .fixed-menu__dot:before {
-  opacity: 1;
 }
 
 .slider {
