@@ -11,6 +11,7 @@
 *.swp
 *.vi
 *~
+
 # OS or Editor folders
 *.sublime-grunt.cache
 *.sublime-project
@@ -22,13 +23,16 @@
 .settings
 .tmproj
 Thumbs.db
+
 # Folders to ignore
 .CVS
 .git
 .hg
 .idea
 .svn
+.dist
 bower_components
+
 # Node.JS
 node_modules
 npm-debug.log
