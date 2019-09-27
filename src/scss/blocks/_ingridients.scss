@@ -1,0 +1,36 @@
+.ingridients {
+    background-color: #fff;
+    padding: rem(20px);
+    color: #000;
+    left: -9999px;
+    top: 0;
+    position: absolute;
+    //display: none;
+}
+
+.ingridients__item {
+    display: flex;
+    align-items: center;
+    margin-right: rem(10px);
+}
+
+.ingridients__icon {
+    max-width: rem(46px);
+    max-height: rem(44px);
+    display: flex;
+    margin-right: rem(10px);
+}
+
+.ingridient__name {
+    font-family: $ubuntu-medium;
+    font-size: rem(14px);
+    margin-right: rem(20px);
+}
+
+.ingridient__weight {
+    font-family: $ubuntu-light;
+    font-size: rem(14px);
+    margin-left: auto;
+    white-space: nowrap;
+}
+

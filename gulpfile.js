@@ -29,9 +29,33 @@ task('copy:html', () => {
    .pipe(dest(DIST_PATH))
    .pipe(reload({ stream: true }));
 })
+
+task('copy:images', () => {
+ return src(`${SRC_PATH}/img/**/*.*`)
+   .pipe(dest(DIST_PATH + '/img/'))
+   .pipe(reload({ stream: true }));
+})
+
+task('copy:fonts', () => {
+ return src(`${SRC_PATH}/fonts/**/*.*`)
+   .pipe(dest(DIST_PATH + '/fonts/'))
+   .pipe(reload({ stream: true }));
+})
+  
+task('copy:svg', () => {
+ return src(`${SRC_PATH}/svg/**/*.*`)
+   .pipe(dest(DIST_PATH + '/svg/'))
+   .pipe(reload({ stream: true }));
+})
+
+task('copy:video', () => {
+  return src(`${SRC_PATH}/video/**/*.*`)
+    .pipe(dest(DIST_PATH + '/video/'))
+    .pipe(reload({ stream: true }));
+ })
  
 task('styles', () => {
- return src([...STYLE_LIBS, 'scss/main.scss'])
+ return src([...STYLE_LIBS, 'src/scss/main.scss'])
    .pipe(gulpif(env === 'dev', sourcemaps.init()))
    .pipe(concat('main.min.scss'))
    .pipe(sassGlob())
@@ -43,17 +67,12 @@ task('styles', () => {
    .pipe(gulpif(env === 'prod', gcmq()))
    .pipe(gulpif(env === 'prod', cleanCSS()))
    .pipe(gulpif(env === 'dev', sourcemaps.write()))
-   .pipe(dest(DIST_PATH))
+   .pipe(dest(DIST_PATH + '/css/'))
    .pipe(reload({ stream: true }));
 });
  
-const libs = [
- 'node_modules/jquery/dist/jquery.js',
- 'src/scripts/*.js'
-];
- 
 task('scripts', () => {
- return src([...JS_LIBS, 'js/*.js'])
+ return src([...JS_LIBS, 'src/js/*.js'])
    .pipe(gulpif(env === 'dev', sourcemaps.init()))
    .pipe(concat('main.min.js', {newLine: ';'}))
    .pipe(gulpif(env === 'prod', babel({
@@ -84,7 +103,7 @@ task('watch', () => {
 task('default',
  series(
    'clean',
-   parallel('copy:html', 'styles', 'scripts'),
+   parallel('copy:html', 'copy:images', 'copy:fonts', 'copy:svg', 'copy:video', 'styles', 'scripts'),
    parallel('watch', 'server')
  )
 );
